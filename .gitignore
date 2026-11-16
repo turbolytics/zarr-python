@@ -96,3 +96,6 @@ zarr.egg-info/
 .claude/
 CLAUDE.md
 docs/superpowers/
+
+# Temper evidence
+/.temper/

@@ -1,0 +1,14 @@
+id: array.contract
+description: >
+  What an array promises in each zarr format: every lossless codec pipeline and
+  every edge fill value round-trips bit for bit, indexing matches numpy, a
+  checksum codec turns a corrupt chunk into an error, and shrinking then growing
+  an array never brings old data back.
+applies_to: format
+requires: [ci]
+members:
+  - key: codec_roundtrip
+  - key: fill_values
+  - key: indexing
+  - key: checksum_detects_corruption
+  - key: resize_no_resurrection

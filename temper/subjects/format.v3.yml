@@ -1,0 +1,10 @@
+id: format.v3
+kind: format
+feature: format.v3
+answers:
+  array.contract:
+    codec_roundtrip: supported
+    fill_values: supported
+    indexing: supported
+    checksum_detects_corruption: supported
+    resize_no_resurrection: {unsupported: true, reason: "documented in Array.resize: boundary chunks keep data outside the new shape, and growing restores it", proven_by: "tests/test_temper_contract.py::test_resize_restores_boundary_data[v3]"}

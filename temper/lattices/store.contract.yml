@@ -1,0 +1,14 @@
+id: store.contract
+description: >
+  What every store must do for zarr, checked per store in both zarr formats.
+  chunk_count_with_siblings and delete_keeps_siblings use arrays named lat and
+  lat_bnds, the CF naming pattern. byte_range_edges asks for empty and
+  past-the-end ranges, which must return empty bytes like MemoryStore does.
+applies_to: store
+requires: [ci]
+members:
+  - key: roundtrip
+  - key: chunk_count_with_siblings
+  - key: delete_keeps_siblings
+  - key: read_never_writes
+  - key: byte_range_edges

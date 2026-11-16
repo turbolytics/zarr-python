@@ -1,0 +1,10 @@
+id: store.obstore
+kind: store
+feature: store.obstore
+answers:
+  store.contract:
+    roundtrip: supported
+    chunk_count_with_siblings: supported
+    delete_keeps_siblings: supported
+    read_never_writes: supported
+    byte_range_edges: supported

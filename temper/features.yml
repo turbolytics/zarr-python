@@ -1,0 +1,26 @@
+# The stores and formats this map covers.
+features:
+  - id: store.memory
+    description: "MemoryStore."
+    requires: [ci]
+  - id: store.local
+    description: "LocalStore."
+    requires: [ci]
+  - id: store.zip
+    description: "ZipStore."
+    requires: [ci]
+  - id: store.fsspec
+    description: "FsspecStore over a local filesystem."
+    requires: [ci]
+  - id: store.obstore
+    description: "ObjectStore over obstore's MemoryStore."
+    requires: [ci]
+  - id: store.logging
+    description: "LoggingStore over MemoryStore."
+    requires: [ci]
+  - id: format.v2
+    description: "Zarr format 2."
+    requires: [ci]
+  - id: format.v3
+    description: "Zarr format 3."
+    requires: [ci]

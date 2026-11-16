@@ -1,0 +1,10 @@
+id: store.zip
+kind: store
+feature: store.zip
+answers:
+  store.contract:
+    roundtrip: supported
+    chunk_count_with_siblings: supported
+    delete_keeps_siblings: {unsupported: true, reason: "ZipStore cannot delete: delete raises NotImplementedError", proven_by: "tests/test_temper_contract.py::test_zip_refuses_deletes[zip]"}
+    read_never_writes: supported
+    byte_range_edges: supported

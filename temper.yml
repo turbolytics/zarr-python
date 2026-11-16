@@ -1,0 +1,6 @@
+temper: "0.1"
+project: zarr-python
+
+levels:
+  - name: ci
+    description: pytest, as CI runs it
